@@ -94,6 +94,12 @@ a:hover {
     opacity: 0.9;
 }
 
+.project-card p {
+    margin: 0;
+    padding: 15px 10px;
+    vertical-align: middle;
+}
+
 .overlay {
     top: 0;
     bottom: 0;
