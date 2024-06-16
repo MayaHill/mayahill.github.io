@@ -164,10 +164,10 @@ a:hover {
     background-color: #17202e;
 }
 
-.img-saveearth {
+.img-flare {
     width: 100%;
     height: 200px;
-    background: url("../images/saveearth-title.png");
+    background: url("../images/flare-title.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
