@@ -224,19 +224,24 @@ a:hover {
 }
 
 .resume .resume-item h4 {
-    line-height: 18px;
+    line-height: 24px;
     font-size: 18px;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin: 0px;
+    vertical-align: middle;
+}
+
+.resume .resume-item p {
+    margin: 5px;
 }
 
 .resume .resume-item h5 {
     font-size: 16px;
     background: #202b3a;
-    padding: 5px 15px;
+    padding: 5px 5px;
     display: inline-block;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin: 10px;
 }
 
 .resume .resume-item ul {
