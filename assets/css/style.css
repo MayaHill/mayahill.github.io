@@ -2,7 +2,7 @@ body, html {
     font-family: "Open Sans", sans-serif;
     height: 100%;
     margin: 0;
-    background-color: #040b14;
+    background-color: #171617;
     color: rgb(240, 236, 236);
 }
 
@@ -28,8 +28,7 @@ li:last-child {
 }
 
 .img-bg {
-    width: 100%;
-    height: 900px;
+    height: 100vh;
     opacity: 0.4;
     background: url("../images/background-title-image.jpg");
     background-position: center;
@@ -47,6 +46,12 @@ li:last-child {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.horizontal-centered-text {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
 }
 
 .top-right {
@@ -91,11 +96,12 @@ a:hover {
 
 .project-card {
     width: 400px;
-    display: inline-block;
-    background-color: #202b3a;
+    background-color: #5b768d;
+    margin-top: 20px;
     margin-bottom: 25px;
     margin-left: 10px;
     margin-right: 10px;
+    border-radius: 15px;
 }
 
 .project-card:hover .overlay {
@@ -106,6 +112,7 @@ a:hover {
     margin: 0;
     padding: 15px 10px;
     vertical-align: middle;
+    color: #f6c6a8;
 }
 
 .overlay {
@@ -117,7 +124,8 @@ a:hover {
     height: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #202b3a;
+    background-color: #5b768d;
+    border-radius: 15px 15px 0px 0px;
 }
 
 .overlay p {
@@ -130,6 +138,7 @@ a:hover {
 }
 
 .img-therightshot {
+    border-radius: 15px 15px 0px 0px;
     width: 100%;
     height: 200px;
     background: url("../images/therightshot_title.jpg");
@@ -138,20 +147,32 @@ a:hover {
     background-size: cover;
 }
 
+.img-exode {
+    border-radius: 15px 15px 0px 0px;
+    width: 100%;
+    height: 200px;
+    background: url("../images/exode-title.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .button {
     width: 30%;
-    background-color: #202b3a;
+    background-color: #5b768d;
     border: none;
+    border-radius: 15px;
     padding: 0;
     cursor: pointer;
-    color: rgb(240, 236, 236);
+    color: #f6c6a8;
     width: fit-content;
     display: inline-block
 }
 
 .button p {
     margin: 0;
-    padding-left: 10px;
+    padding-left: 5px;
+    padding-right: 15px;
     padding-bottom: 5px;
 }
 
@@ -161,10 +182,11 @@ a:hover {
 }
 
 .button:hover {
-    background-color: #17202e;
+    background-color: #35536c;
 }
 
 .img-flare {
+    border-radius: 15px 15px 0px 0px;
     width: 100%;
     height: 200px;
     background: url("../images/flare-title.png");
@@ -174,6 +196,7 @@ a:hover {
 }
 
 .img-mydefender {
+    border-radius: 15px 15px 0px 0px;
     width: 100%;
     height: 200px;
     background: url("../images/mydefender-title.png");
@@ -183,6 +206,7 @@ a:hover {
 }
 
 .img-bomberman {
+    border-radius: 15px 15px 0px 0px;
     width: 100%;
     height: 200px;
     background: url("../images/bomberman-title.png");
@@ -192,6 +216,7 @@ a:hover {
 }
 
 .img-hexagon {
+    border-radius: 15px 15px 0px 0px;
     width: 100%;
     height: 200px;
     background: url("../images/hexagon_world_builder-title.png");
@@ -201,6 +226,7 @@ a:hover {
 }
 
 .img-golfydungeon {
+    border-radius: 15px 15px 0px 0px;
     width: 100%;
     height: 200px;
     background: url("../images/golfydungeon-title.png");
@@ -212,15 +238,17 @@ a:hover {
 .resume .resume-title {
     font-size: 26px;
     font-weight: 700;
-    margin-top: 20px;
     margin-bottom: 20px;
 }
 
 .resume .resume-item {
-    padding: 0 0 20px 20px;
-    margin-top: -2px;
-    border-left: 2px solid #1f5297;
-    position: relative;
+    background-color: #1E1C1F;
+    padding: 20px 25px;
+    max-width: 540px;
+    margin: 15px;
+    flex: 1;
+    border-radius: 5%;
+    z-index: 1;
 }
 
 .resume .resume-item h4 {
@@ -252,24 +280,9 @@ a:hover {
     padding-bottom: 10px;
 }
 
-.resume .resume-item:last-child {
-    padding-bottom: 0px;
-}
-
-.resume .resume-item::before {
-    content: "";
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    border-radius: 50px;
-    left: -9px;
-    top: 0;
-    background: #fff;
-    border: 2px solid #1f5297;
-}
-
 .resume {
     margin: 10px;
+    color: #f6c6a8;
 }
 
 .col-2 {
@@ -277,3 +290,4 @@ a:hover {
     width: 40%;
     padding: 20px 5%;
 }
+
