@@ -67,12 +67,12 @@ li:last-child {
 }
 
 a {
-    color: rgb(224, 218, 218);
+    color: #d8a280;
     text-decoration: none;
 }
 
 a:hover {
-    color: rgb(175, 164, 164);
+    color: #ca9473;
     text-decoration: none;
 }
 
