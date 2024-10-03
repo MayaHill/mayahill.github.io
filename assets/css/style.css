@@ -1,9 +1,62 @@
+:root {
+    --header-color: #1e1c1f;
+    --dark-header-color: #19181a;
+    --bg-color: #171617;
+    --title-color: #d17c7c;
+    --item-color: #f6c6a8;
+
+    --title-font-size: 54px;
+    --lg-font-size: 48px;
+    --md-font-size: 24px;
+    --sm-font-size: 19px;
+}
+
 body, html {
     font-family: "Open Sans", sans-serif;
     height: 100%;
     margin: 0;
-    background-color: #171617;
-    color: rgb(240, 236, 236);
+    background-color: var(--bg-color);
+    color: var(--item-color);
+}
+
+p {
+    font-size: var(--sm-font-size);
+    color: var(--item-color);
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.section-title {
+    margin: 0;
+    color: var(--title-color);
+}
+
+h1.section-title {
+    font-size: var(--lg-font-size);
+}
+
+h2.section-title {
+    font-size: var(--md-font-size);
 }
 
 li {
@@ -18,54 +71,6 @@ li:last-child {
     text-align: center;
 }
 
-.title h1 {
-    font-size: 52px;
-    margin: 0;
-}
-
-.title h2 {
-    font-size: 30px;
-}
-
-.img-bg {
-    height: 100vh;
-    opacity: 0.4;
-    background: url("../images/background-title-image.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.img-text-container {
-    position: relative;
-    text-align: center;
-}
-
-.centered-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.horizontal-centered-text {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0%);
-}
-
-.top-right {
-    position: absolute;
-    top: 8px;
-    right: 16px;
-}
-
-.nav-menu-ul li {
-    display: inline;
-    margin: 25px;
-    color: rgb(240, 236, 236);
-}
-
 a {
     color: #d8a280;
     text-decoration: none;
@@ -77,31 +82,65 @@ a:hover {
 }
 
 .icon {
+    position: relative;
+    top: 5px;
     margin: 10px;
 }
 
-.text-border {
-    padding: 1px 30%;
-}
-
-.light-text p {
-    font-weight: lighter;
-    line-height: 1.5;
-}
-
-.row {
+.header-container {
+    position: fixed;
+    top: 0;
     width: 100%;
-    text-align: center;
+    
+    background-color: var(--header-color); 
+}
+
+.header-icon {
+    color: var(--item-color);
+    font-size: 50px;
+    margin-right: 15px;
+}
+
+.header-button {
+    background-color: #00000000;
+    color: var(--item-color);
+
+    border: 3px solid var(--item-color);
+    border-radius: 10%;
+
+    padding: 3px;
+}
+
+.profile-img {
+    width: 200px;
+    height: auto;
+    border: 2px solid var(--item-color);
+    border-radius: 50%;
+    margin-right: 40px;
+}
+
+.simple-container {
+    color: var(--item-color);
+    border: 3px solid var(--item-color);
+    border-radius: 10%;
+    padding-top: 4px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.simple-container p {
+    margin: 5px 10px;
 }
 
 .project-card {
-    width: 400px;
-    background-color: #5b768d;
+    width: 360px;
+    background-color: var(--header-color);
+    border-radius: 15px;
+
     margin-top: 20px;
     margin-bottom: 25px;
     margin-left: 10px;
-    margin-right: 10px;
-    border-radius: 15px;
+    margin-right: 20px;
 }
 
 .project-card:hover .overlay {
@@ -112,29 +151,57 @@ a:hover {
     margin: 0;
     padding: 15px 10px;
     vertical-align: middle;
-    color: #f6c6a8;
+    color: var(--item-color);
 }
 
-.overlay {
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+.project-card .header-info {
+    position: relative;
+    top: 80%;
     width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #5b768d;
-    border-radius: 15px 15px 0px 0px;
+    height: 20%;
+
+    opacity: 0.8;
+    background-color: var(--header-color);
 }
 
-.overlay p {
-    padding: 15px 10px;
+.project-card .card-title {
+    padding: 0;
+    padding-top: 15px;
 }
 
-.container {
-    font-size: 20px;
-    padding: 5px 10px;
+.project-card .card-text {
+    font-size: 14px;
+}
+
+.header-info p {
+    padding: 0;
+}
+
+.header-info i {
+    margin: 0 5px 0 10px;
+}
+
+.button {
+    width: 30%;
+    background-color: var(--header-color);
+    border: none;
+    border-radius: 15px;
+    padding: 0;
+    cursor: pointer;
+    color: var(--item-color);
+    width: fit-content;
+    display: inline-block
+}
+
+.button p {
+    margin: 0;
+    padding-left: 5px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+}
+
+.button:hover {
+    background-color: var(--dark-header-color);
 }
 
 .img-therightshot {
@@ -155,34 +222,6 @@ a:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.button {
-    width: 30%;
-    background-color: #5b768d;
-    border: none;
-    border-radius: 15px;
-    padding: 0;
-    cursor: pointer;
-    color: #f6c6a8;
-    width: fit-content;
-    display: inline-block
-}
-
-.button p {
-    margin: 0;
-    padding-left: 5px;
-    padding-right: 15px;
-    padding-bottom: 5px;
-}
-
-.icon {
-    position: relative;
-    top: 5px;
-}
-
-.button:hover {
-    background-color: #35536c;
 }
 
 .img-flare {
@@ -225,24 +264,38 @@ a:hover {
     background-size: cover;
 }
 
-.img-golfydungeon {
+.img-goblin-hunter {
     border-radius: 15px 15px 0px 0px;
     width: 100%;
     height: 200px;
-    background: url("../images/golfydungeon-title.png");
+    background: url("../images/goblinhunter_title.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.resume .resume-title {
-    font-size: 26px;
-    font-weight: 700;
-    margin-bottom: 20px;
+.img-gaia {
+    border-radius: 15px 15px 0px 0px;
+    width: 100%;
+    height: 200px;
+    background: url("../images/gaia-title.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+video {
+    margin: 10px;
+}
+
+.resume {
+    margin: 10px;
+    color: var(--item-color);
 }
 
 .resume .resume-item {
-    background-color: #1E1C1F;
+    position: relative;
+    background-color: var(--header-color);
     padding: 20px 25px;
     max-width: 540px;
     margin: 15px;
@@ -253,19 +306,20 @@ a:hover {
 
 .resume .resume-item h4 {
     line-height: 24px;
-    font-size: 18px;
+    font-size: var(--sm-font-size);
     font-weight: 600;
     margin: 0px;
     vertical-align: middle;
 }
 
 .resume .resume-item p {
+    font-size: 16px;
     margin: 5px;
 }
 
 .resume .resume-item h5 {
     font-size: 16px;
-    background: #202b3a;
+    background: var(--title-color);
     padding: 5px 5px;
     display: inline-block;
     font-weight: 600;
@@ -280,14 +334,14 @@ a:hover {
     padding-bottom: 10px;
 }
 
-.resume {
-    margin: 10px;
-    color: #f6c6a8;
+.resume .timeline-rect {
+    position: absolute;
+    top: 10%;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    width: 15px;
+    z-index: 0;
+    background-color: var(--title-color);
 }
-
-.col-2 {
-    float: left;
-    width: 40%;
-    padding: 20px 5%;
-}
-

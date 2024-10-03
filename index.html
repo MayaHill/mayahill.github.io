@@ -7,110 +7,117 @@
 </head>
 
 <body>
-    <div class="img-text-container" style="z-index: 2;">
-        <div style="position: fixed; top: 0; width: 100%; background-color: #1E1C1F; display: flex;">
-            <div style="text-align: left; padding: 10px 30px; flex: 1; color: #d17c7c;">
-                <h1 style="font-size: 54px; margin: 15px 0px;">Maya Hill</h1>
+    <div style="position: relative; z-index: 100;">
+        <div class="flex-row header-container">
+            <div style="text-align: left; padding: 10px 30px; flex: 1;">
+                <h1 class="section-title" style="font-size: 54px; margin: 15px 0px;">Maya Hill</h1>
                 <p style="font-size: 24px; margin: 15px 0px;">Gameplay Programmer Portfolio</p>
             </div>
-            <div style="flex: 1; text-align: right; display: flex; justify-content: flex-end; padding: 30px;">
+            <div class="flex-row" style="flex: 1; text-align: right; justify-content: flex-end; padding: 30px;">
                 <a href="https://github.com/MayaHill" target="_blank">
-                    <i class="bx bxl-github" style="color: #f6c6a8; font-size: 50px; margin-right: 15px;"></i>
+                    <i class="bx bxl-github header-icon"></i>
                 </a>
                 <a href="https://discord.com/users/691698293389918219" target="_blank">
-                    <i class="bx bxl-discord" style="color: #f6c6a8; font-size: 50px; margin-right: 15px;"></i>
+                    <i class="bx bxl-discord header-icon"></i>
                 </a>
                 <a href="https://www.linkedin.com/in/maya-hill-b8ab701bb/" target="_blank">
-                    <i class="bx bxl-linkedin" style="color: #f6c6a8; font-size: 50px; margin-right: 15px;"></i>
+                    <i class="bx bxl-linkedin header-icon"></i>
                 </a>
                 <a href="assets/files/RESUME_Maya_Hill_2024_EN.pdf" target="_blank">
-                    <button style="color: #f6c6a8; background-color: #00000000; border: 3px solid #f6c6a8; border-radius: 10%; cursor: pointer; display: flex; align-items: center; padding-top: 5px;">
+                    <button class="flex-row align-center pointer header-button">
                         <i class="bx bx-download bx-sm" style="margin: 5px;"></i>
-                        <p style="font-size: 18px; margin: 0 5px;">Resume</p>
+                        <p style="margin: 0 5px;">Resume</p>
                     </button>
                 </a>
             </div>
         </div>
     </div>
-    <section id="about" style="display: flex; flex-direction: column; align-items: center; padding: 20px; margin-top: 220px;">
-        <h2 style="font-size: 48px; margin: 0; color: #d17c7c">About Me</h2>
-        <div style="display: flex; align-items: flex-start; justify-content: center; margin-top: 20px; width: 100%;">
-            <img src="assets/images/maya_hill.jpg" alt="Maya Hill" style="width: 200px; height: auto; border: 2px solid #f6c6a8; border-radius: 50%; margin-right: 40px;">
-            <p style="font-size: 19px; line-height: 1.6; max-width: 800px; color: #f6c6a8;">
+    <section id="about" class="flex-column align-center" style="padding: 20px; margin-top: 220px;">
+        <h1 class="section-title">About Me</h1>
+        <div class="flex-row" style="align-items: flex-start; justify-content: center; margin-top: 20px; width: 100%;">
+            <img src="assets/images/maya_hill.jpg" alt="Maya Hill" class="profile-img">
+            <p style="line-height: 1.6; max-width: 800px;">
                 Hello! I'm Maya Hill, an aspiring gameplay programmer based in Montpellier. I love creating fun gameplay experiences and have experience with various programming language, including C, C++ and C# (Unity).
                 I've worked on several professional projects, such as <a href="https://thegamebakers.itch.io/the-right-shot" target="_blank"><i>The Right Shot</i></a> and <a href="https://exode.io" target="_blank"><i>Exode</i></a>, and many student projects over the years.
                 With a background in computer science at <a href="https://www.epitech.eu/" target="_blank"><i>Epitech</i></a>, I'm always looking for new challenges and opportunities to learn and improve.
             </p>
         </div>
-        <section id="technical-experience" style="display: flex; flex-direction: column; padding: 50px;">
-            <h2 style="font-size: 24px; margin: 0; color: #d17c7c">Technical Experience</h2>
-            <div style="display: flex; margin: 15px;">
-                <div style="color: #f6c6a8; background-color: #00000000; border: 3px solid #f6c6a8; border-radius: 10%; padding-top: 4px; margin-right: 10px;">
-                    <p style="margin: 5px 10px;">C</p>
+        <section id="technical-experience" class="flex-column" style="padding: 50px;">
+            <h2 class="section-title">Technical Experience</h2>
+            <div class="flex-row" style="margin: 15px;">
+                <div class="simple-container">
+                    <p>C</p>
                 </div>
-                <div style="color: #f6c6a8; background-color: #00000000; border: 3px solid #f6c6a8; border-radius: 10%; padding-top: 4px; margin-right: 10px;">
-                    <p style="margin: 5px 10px;">C++</p>
+                <div class="simple-container">
+                    <p>C++</p>
                 </div>
-                <div style="color: #f6c6a8; background-color: #00000000; border: 3px solid #f6c6a8; border-radius: 10%; padding-top: 4px; margin-right: 10px;">
-                    <p style="margin: 5px 10px;">Unity</p>
+                <div class="simple-container">
+                    <p>Unity</p>
                 </div>
-                <div style="color: #f6c6a8; background-color: #00000000; border: 3px solid #f6c6a8; border-radius: 10%; padding-top: 4px; margin-right: 10px;">
-                    <p style="margin: 5px 10px;">SFML</p>
+                <div class="simple-container">
+                    <p>SFML</p>
                 </div>
-                <div style="color: #f6c6a8; background-color: #00000000; border: 3px solid #f6c6a8; border-radius: 10%; padding-top: 4px; margin-right: 10px;">
-                    <p style="margin: 5px 10px;">SDL2</p>
+                <div class="simple-container">
+                    <p>SDL2</p>
                 </div>
-                <div style="color: #f6c6a8; background-color: #00000000; border: 3px solid #f6c6a8; border-radius: 10%; padding-top: 4px; margin-right: 10px;">
-                    <p style="margin: 5px 10px;">Raylib</p>
+                <div class="simple-container">
+                    <p>Raylib</p>
                 </div>
-                <div style="color: #f6c6a8; background-color: #00000000; border: 3px solid #f6c6a8; border-radius: 10%; padding-top: 4px; margin-right: 10px;">
-                    <p style="margin: 5px 10px;">Git</p>
+                <div class="simple-container">
+                    <p>JavaScript</p>
                 </div>
-                <div style="color: #f6c6a8; background-color: #00000000; border: 3px solid #f6c6a8; border-radius: 10%; padding-top: 4px; margin-right: 10px;">
-                    <p style="margin: 5px 10px;">Visual Studio</p>
+                <div class="simple-container">
+                    <p>Git</p>
                 </div>
-                <div style="color: #f6c6a8; background-color: #00000000; border: 3px solid #f6c6a8; border-radius: 10%; padding-top: 4px; margin-right: 10px;">
-                    <p style="margin: 5px 10px;">Slack</p>
+                <div class="simple-container">
+                    <p>Visual Studio</p>
                 </div>
-                <div style="color: #f6c6a8; background-color: #00000000; border: 3px solid #f6c6a8; border-radius: 10%; padding-top: 4px; margin-right: 10px;">
-                    <p style="margin: 5px 10px;">Miro</p>
+                <div class="simple-container">
+                    <p>Slack</p>
+                </div>
+                <div class="simple-container">
+                    <p>Miro</p>
                 </div>
             </div>
         </section>
     </section>
 
-    <section id="portfolio" style="display: flex; flex-direction: column; align-items: center; padding: 20px;">
-        <h2 style="font-size: 48px; margin: 0; color: #d17c7c">Portfolio</h2>
+    <section id="portfolio" class="flex-column align-center" style="padding: 20px;">
+        <h1 class="section-title">Portfolio</h1>
         <div class="center">
-            <h3 style="color: #d17c7c; font-size: 24px; margin: 0; margin-top: 15px;">Professional Projects</h3>
-            <div style="display: flex; align-items: center;">
+            <h2 class="section-title" style="margin-top: 15px;">Professional Projects</h2>
+            <div class="flex-row justify-center">
                 <div class="project-card">
                     <a href="https://thegamebakers.itch.io/the-right-shot" target="_blank">
                         <div class="img-therightshot">
-                            <div class="overlay ">
-                                <p class="light-text center"><i>The Right Shot</i> was made during my internship at TheGameBakers with Unity.
-                                    <br><br> It's a fast action-arcade game, where the goal is to catch cocktails and serve them to the right table!
-                                    <br><br> As it was a very small team, I contributed not only as a game programmer, but also as a game designer, level designer and QA tester.
-                                </p>
+                            <div class="flex-row align-center header-info">
+                                <p><i class="bx bx-group bx-sm icon"></i>3</p>
+                                <p><i class="bx bx-extension bx-sm icon"></i>Unity</p>
                             </div>
                         </div>
-                        <div class="center container">
-                            <p>The Right Shot</p>
+                        <div style="padding-left: 5px;">
+                            <p class="card-title">The Right Shot</p>
+                            <p class="card-text"><i>The Right Shot</i> was made during my internship at TheGameBakers with Unity.
+                                <br><br> It's a fast action-arcade game, where the goal is to catch cocktails and serve them to the right table!
+                                <br><br> As it was a very small team, I contributed not only as a game programmer, but also as a game designer, level designer and QA tester.
+                            </p>
                         </div>
                     </a>
                 </div>
                 <div class="project-card">
                     <a href="https://exode.io/" target="_blank">
                         <div class="img-exode">
-                            <div class="overlay ">
-                                <p class="light-text center">I contributed to the web game <i>Exode</i> during my internship at Disruptive AI using Javascript and PHP.
-                                    <br><br> It's a space colonization game where strategy is key, and the player must carefully manage a team and resolve events.
-                                    <br><br> I developed several new features, including an interactive tutorial, a game information menu and worked on bug fixes.
-                                </p>
+                            <div class="flex-row align-center header-info">
+                                <p><i class="bx bx-group bx-sm icon"></i>4</p>
+                                <p><i class="bx bx-extension bx-sm icon"></i>JavaScript / PHP</p>
                             </div>
                         </div>
                         <div class="center container">
-                            <p>Exode</p>
+                            <p class="card-title">Exode</p>
+                            <p class="card-text">I contributed to the web game <i>Exode</i> during my internship at Disruptive AI using Javascript and PHP.
+                                <br><br> It's a space colonization game where strategy is key, and the player must carefully manage a team and resolve events.
+                                <br><br> I developed several new features, including an interactive tutorial, a game information menu and worked on bug fixes.
+                            </p>
                         </div>
                     </a>
                 </div>
@@ -123,125 +130,164 @@
         </div>
 
         <div class="center">
-            <h3 style="color: #d17c7c; font-size: 24px; margin: 0; margin-top: 25px;">Personal Projects</h3>
-            <div style="display: flex; align-items: center;">
+            <h2 class="section-title" style="margin-top: 25px;">Personal Projects</h2>
+            <div class="flex-row justify-center">
                 <div class="project-card">
                     <a href="https://github.com/MayaHill/HexagonWorldBuilder" target="_blank">
                         <div class="img-hexagon">
-                            <div class="overlay ">
-                                <p class="light-text center"><i>Hexagon World Builder</i> is a small game I made in 48 hours with Unity.
-                                    <br><br> It's a calm and soothing game where the player has to place tiles to score points.
-                                </p>
+                            <div class="flex-row align-center header-info">
+                                <p><i class="bx bx-group bx-sm icon"></i>1</p>
+                                <p><i class="bx bx-extension bx-sm icon"></i>Unity</p>
                             </div>
                         </div>
                         <div class="center container">
-                            <p>Hexagon World Builder</p>
+                            <p class="card-title">Hexagon World Builder</p>
+                            <p class="card-text"><i>Hexagon World Builder</i> is a small game I made in 48 hours with Unity.
+                                <br><br> It's a calm and soothing game where the player has to place tiles to score points.
+                            </p>
                         </div>
                     </a>
                 </div>
                 <div class="project-card">
-                    <div class="img-golfydungeon">
-                        <div class="overlay ">
-                            <p class="light-text center"><i>Golfy Dungeon</i> is a game about a small golf ball stuck in a dungeon I'm currently developing with Unity.
-                                <br><br> As I'm making it on my own, I try to do a bit of everything from programming to UI to designing levels and mechanics.
-                            </p>
+                    <div class="img-goblin-hunter">
+                        <div class="flex-row align-center header-info">
+                            <p><i class="bx bx-group bx-sm icon"></i>1</p>
+                            <p><i class="bx bx-extension bx-sm icon"></i>C++ / SFML</p>
                         </div>
                     </div>
                     <div class="center container">
-                        <p>Golfy Dungeon</p>
+                        <p class="card-title">Goblin Hunter</p>
+                        <p class="card-text"><i>Goblin Hunter</i> is a game made in C++ with the SFML library. It was worked on during the Develop@Ubisoft mentorship program.
+                            <br><br>You fight goblins with arrows, avoid them by dashing, collect power ups and try to survive as long as possible to get a high score!
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="center">
-            <h3 style="color: #d17c7c; font-size: 24px; margin: 0; margin-top: 15px;">School Projects</h3>
-            <div style="display: flex; align-items: center;">
-                <div class="project-card" >
+            <h2 class="section-title" style="margin-top: 15px;">School Projects</h2>
+            <div class="flex-row justify-center">
+                <div class="project-card">
                     <a href="https://github.com/MayaHill/MyDefender" target="_blank">
                         <div class="img-mydefender">
-                            <div class="overlay ">
-                                <p class="light-text center"><i>My Defender</i> was made during my 1st year at Epitech in C with the CSFML library.
-                                    <br><br> It was a two-people project where the goal was to make a Tower Defense game.
-                                </p>
+                            <div class="flex-row align-center header-info">
+                                <p><i class="bx bx-group bx-sm icon"></i>2</p>
+                                <p><i class="bx bx-extension bx-sm icon"></i>C / CSFML</p>
                             </div>
                         </div>
                         <div class="center container">
-                            <p>My Defender</p>
+                            <p class="card-title">My Defender</p>
+                            <p class="card-text"><i>My Defender</i> was made during my 1st year at Epitech in C with the CSFML library.
+                                <br><br> It was a 2 people project where the goal was to make a Tower Defense game.
+                            </p>
                         </div>
                     </a>
                 </div>
                 <div class="project-card" >
                     <a href="https://github.com/MayaHill/IndieStudio" target="_blank">
                         <div class="img-bomberman">
-                            <div class="overlay ">
-                                <p class="light-text center"><i>My Bomberman</i> was made during my 2nd year at Epitech in C++ with the raylib library.
-                                    <br><br> It was a six-people project where the goal was to recreate Bomberman.
-                                    <br><br> My role was focused around gameplay programming, as well as the local multiplayer.
-                                </p>
+                            <div class="flex-row align-center header-info">
+                                <p><i class="bx bx-group bx-sm icon"></i>6</p>
+                                <p><i class="bx bx-extension bx-sm icon"></i>C++ / Raylib</p>
                             </div>
                         </div>
                         <div class="center container">
-                            <p>My Bomberman</p>
-                            <div>
+                            <p class="card-title">My Bomberman</p>
+                            <p class="card-text"><i>My Bomberman</i> was made during my 2nd year at Epitech in C++ with the raylib library.
+                                <br><br> It was a 6 people project where the goal was to recreate Bomberman.
+                                <br><br> My role was focused around gameplay programming, as well as the local multiplayer.
+                            </p>
                         </div>
                     </a>
                 </div>
-            </div>
-            <div class="project-card" >
-                <a target="_blank">
-                    <div class="img-flare">
-                        <div class="overlay ">
-                            <p class="light-text center"><i>Flare</i> was made during my exchange year at Keimyung University, using Unity.
-                                <br><br> It was a four-people project where the goal was to create a 2D game in 3 months.
+                <div class="project-card">
+                    <a target="_blank">
+                        <div class="img-flare">
+                            <div class="flex-row align-center header-info">
+                                <p><i class="bx bx-group bx-sm icon"></i>4</p>
+                                <p><i class="bx bx-extension bx-sm icon"></i>Unity</p>
+                            </div>
+                        </div>
+                        
+                        <div class="center container">
+                            <p class="card-title">Flare</p>
+                            <p class="card-text"><i>Flare</i> was made during my exchange year at Keimyung University, using Unity.
+                                <br><br> It was a 4 people project where the goal was to create a 2D game in 3 months.
                                 <br><br>I mainly worked on the player movements and camera, but also developed the pathfinding tool for the game's bosses.
                             </p>
                         </div>
-                    </div>
-                    <div class="center container">
-                        <p>Flare</p>
-                    </div>
-                </a>
+                    </a>
+                </div>
+                <div class="project-card">
+                    <a target="_blank">
+                        <div class="img-gaia">
+                            <div class="flex-row align-center header-info">
+                                <p><i class="bx bx-group bx-sm icon"></i>10+</p>
+                                <p><i class="bx bx-extension bx-sm icon"></i>Unity / Python</p>
+                            </div>
+                        </div>
+                        
+                        <div class="center container">
+                            <p class="card-title">GAIA</p>
+                            <p class="card-text">This is my graduation project, which aims to integrate AI in a video game.
+                                <br><br>The goal is to create a game with complex interactions between the player, NPCs, and the environment, forging genuine relationships based on the player's words and actions.
+                                <br><br>Each NPC possesses the ability to speak and act autonomously, shaped by their unique perceptions and memories. 
+                            </p>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
     <section>
-        <div class="center">
-            <h3 style="color: #d17c7c; font-size: 24px; margin: 0; margin-top: 15px;">Gameplay Footage</h3>
-            <video width="480" height="360" autoplay loop muted>
-                <source src="assets/images/MyDefender_Gameplay.mp4" type="video/mp4">
+        <div class="center" style="margin: 10px">
+            <h2 class="section-title" style="margin: 15px 0;">Gameplay Footage</h2>
+            <video width="480" autoplay loop muted>
+                <source src="assets/images/The Right Shot_Gameplay.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-            <video width="480" height="360" autoplay loop muted>
-                <source src="assets/images/Bomberman_Gameplay.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <video width="480" height="360" autoplay loop muted>
-                <source src="assets/images/Flare_Gameplay.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <video width="480" height="360" autoplay loop muted>
-                <source src="assets/images/LightlySearching_Gameplay.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <video width="480" height="360" autoplay loop muted>
+            <video width="480" autoplay loop muted>
                 <source src="assets/images/HexagonBuilder_Gameplay.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-            <video width="480" height="360" autoplay loop muted>
+            <video width="480" autoplay loop muted>
+                <source src="assets/images/GoblinHunter_Gameplay.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video width="480" autoplay loop muted>
+                <source src="assets/images/Bomberman_Gameplay.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video width="480" autoplay loop muted>
+                <source src="assets/images/Flare_Gameplay.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video width="480" autoplay loop muted>
+                <source src="assets/images/GAIA_Gameplay.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video width="480" autoplay loop muted>
+                <source src="assets/images/MyDefender_Gameplay.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video width="480" autoplay loop muted>
                 <source src="assets/images/GolfyDungeon_Gameplay.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video width="480" autoplay loop muted>
+                <source src="assets/images/LightlySearching_Gameplay.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
     </section>
 
-    <section id="resume" class="resume" style="display: flex; justify-content: center; padding: 20px;">
+    <section id="resume" class="resume flex-row" style="justify-content: center; padding: 20px; position:relative; z-index: 1;">
         <div style="position: relative; max-width: 800px; margin-right: 60px;">
-            <h2 style="font-size: 48px; margin: 0; color: #d17c7c; text-align: center;">Education</h2>
-            <div style="position: absolute; left: 50%; width: 15px; background-color: #d17c7c; top: 10%; bottom: 20%; transform: translateX(-50%); z-index: 0;"></div>
-            <div style="display: flex; flex-direction: column; margin-top: 10px;">
-                <div style="background-color: #f6c6a8;"></div>
+            <h1 class="section-title center">Education</h1>
+            <div class="timeline-rect"></div>
+            <div class="flex-column" style="margin-top: 10px;">
                 <div class="resume-item timeline">
                     <h4>Master's degree in Computer Science</h4>
                     <h5>2020 - 2025</h5>
@@ -264,7 +310,7 @@
                 </div>
                 <div class="resume-item">
                     <h4>Teaching & Coaching</h4>
-                    <h5>jun. 2022 - mar. 2023</h5>
+                    <h5>2022 - 2023</h5>
                     <p><em><a href="https://www.ionis-stm.com/" target="_blank">IONIS STM</a>, Paris, France</em></p>
                     <ul>
                         <li>Program designed to train and support students in their role as an
@@ -282,9 +328,9 @@
         </div>
 
         <div style="position: relative; max-width: 800px;">
-            <h2 style="font-size: 48px; margin: 0; color: #d17c7c; text-align: center;">Professional Experience</h2>
-            <div style="position: absolute; left: 50%; width: 15px; background-color: #d17c7c; top: 10%; bottom: 50px; transform: translateX(-50%); z-index: 0;"></div>
-            <div style="display: flex; flex-direction: column; margin-top: 10px;">
+            <h1 class="section-title center">Professional Experience</h1>
+            <div class="timeline-rect"></div>
+            <div class="flex-column" style="margin-top: 10px;">
                 <div class="resume-item">
                     <h4>Web Game Programmer Intern</h4>
                     <h5>apr. - aug. 2023</h5>
@@ -339,9 +385,9 @@
         </div>
     </section>
 
-    <div class="contact title">
-        <h2 style="font-size: 48px; margin: 0; color: #d17c7c; text-align: center;">Contact Me</h2>
-        <p class="text-border light-text center" style="color: #f6c6a8;">For any inquiries, feel free to reach out via <a href="mailto: maya.hilld22@gmail.com">email</a>, <a href="https://discord.com/users/691698293389918219" target="_blank">Discord</a>, or <a href="https://www.linkedin.com/in/maya-hill-b8ab701bb/" target="_blank">LinkedIn</a>. I look forward to hearing from you!
+    <div class="contact">
+        <h1 class="section-title center">Contact Me</h1>
+        <p class="center">For any inquiries, feel free to reach out via <a href="mailto: maya.hilld22@gmail.com">email</a>, <a href="https://discord.com/users/691698293389918219" target="_blank">Discord</a>, or <a href="https://www.linkedin.com/in/maya-hill-b8ab701bb/" target="_blank">LinkedIn</a>. I look forward to hearing from you!
         <br><br><br></p>
     </div>
 </body>
