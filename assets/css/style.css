@@ -337,7 +337,7 @@ video {
 .resume .timeline-rect {
     position: absolute;
     top: 10%;
-    bottom: 20%;
+    bottom: 10%;
     left: 50%;
     transform: translateX(-50%);
     
